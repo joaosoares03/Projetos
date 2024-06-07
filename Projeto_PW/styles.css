@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    background-color: #12202e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+  
+header .logo img {
+    height: 50px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+main {
+    padding: 20px;
+    background-image: url("IMG.png");
+    background-size: contain;
+}
+
+section {
+    background-color: rgba(160, 202, 241, 0.459); 
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section table, section th, section td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tbody {
+    background-color: #f2f2f2;
+}
+
+section th {
+    background-color: #12202e;
+    color: #fff;
+}
+
+section .noticia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section .noticia img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.fantasy-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.fantasy-actions button {
+    background-color: #12202e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.fantasy-actions button:hover {
+    background-color: #004488;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFL Brasil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logonfl.png" alt="Logo da NFL">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Times</a></li>
+        <li><a href="#calendario">Calendário</a></li>
+        <li><a href="#resultados">Classificação</a></li>
+        <li><a href="#">Notícias</a></li>
+        <li><a href="#fantasy">Fantasy Football</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="noticias">
+      <h2>Últimas Notícias</h2>
+      <div class="noticia">
+        <img src="images/imagesnews1.png" alt="Notícia 1">
+        <div class="noticia-texto">
+          <h3>Jogador da NFL diz que não poderá usar verde no Brasil por causa de gangues…</h3>
+          <p>O running back Josh Jacobs, do Green Bay Packers, disse, em participação no podcast Green Light with Chris Long, que não poderá usar verde no Brasil. O time dele participará do primeiro jogo da NFL no país, contra o Philadelphia Eagles, na Neo Química Arena, em São Paulo.</p>
+        </div>
+      </div>
+      <div class="noticia">
+        <img src="images/imagesnews2.png" alt="Notícia 2">
+        <div class="noticia-texto">
+          <h3>NFL no Brasil: detalhes de início de venda de ingressos para Eagles x Packers são divulgados</h3>
+          <p>A NFL anunciou nesta sexta-feira (31) os primeiros detalhes sobre a venda de ingressos para Philadelphia Eagles x Green Bay Packers. A partida, marcada para 6 de setembro, terá como palco a Neo Química Arena, estádio do Corinthians, em São Paulo, pela primeira semana da temporada regular. Assine o Combo+! Além de todo o conteúdo ESPN, com o Combo+ você tem acesso ao melhor do entretenimento de Star+ e às franquias mais amadas de Disney+. Assine já! Segundo comunicado, haverá uma pré-venda de ingressos destinada a clientes da empresa XP Investimentos a partir de 10 de junho. A venda para o público geral acontecerá no dia 13 de junho. A NFL ainda divulgará detalhes sobre plataforma de comercialização e valores dos ingressos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendario">
+      <h2>Calendário de Jogos</h2>
+      <table id="tabela-jogos">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Jogo</th>
+            <th>Local</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Semana 1 -->
+          <tr>
+            <td>07/09/2023</td>
+            <td>20:20</td>
+            <td>Detroit Lions vs Kansas City Chiefs</td>
+            <td>Arrowhead Stadium</td>
+          </tr>
+          <tr>
+            <td>10/09/2023</td>
+            <td>13:00</td>
+            <td>Carolina Panthers vs Atlanta Falcons</td>
+            <td>Mercedes-Benz Stadium</td>
+          </tr>
+          <tr>
+            <td>10/09/2023</td>
+            <td>13:00</td>
+            <td>Cincinnati Bengals vs Cleveland Browns</td>
+            <td>FirstEnergy Stadium</td>
+          </tr>
+          <!-- Adicione mais jogos aqui -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="resultados">
+      <h2>Resultados Recentes</h2>
+      <table id="tabela-resultados">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Jogo</th>
+            <th>Placar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/09/2023</td>
+            <td>Time A vs Time B</td>
+            <td>21-17</td>
+          </tr>
+          <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="transmissao">
+      <h2>Transmissão ao Vivo</h2>
+      <p>Assista aos jogos ao vivo aqui.</p>
+      <a href="https://www.dazn.com/pt-BR/competition/Competition:wy3kluvb4efae1of0d8146c1" target="_blank"><button>Assistir Agora</button></a>
+    </section>
+
+    <section id="fantasy">
+      <h2>Gerenciamento de Ligas e Fantasy Football</h2>
+      <div class="fantasy-actions">
+        <button onclick="criarLiga()">Criar Liga</button>
+        <button onclick="montarTime()">Montar Time</button>
+        <button onclick="participarDraft()">Participar do Draft</button>
+      </div>
+      <div id="fantasy-content">
+        <!-- Conteúdo dinâmico gerado por JavaScript -->
+      </div>
+    </section>
+
+    <section id="playoffs">
+      <h2>Playoffs</h2>
+      <table id="tabela-playoffs">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Jogo</th>
+            <th>Local</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Wild Card Round -->
+          <tr>
+            <td>13/01/2024</td>
+            <td>16:30</td>
+            <td>Team A vs Team B</td>
+            <td>Local X</td>
+          </tr>
+          <tr>
+            <td>13/01/2024</td>
+            <td>20:15</td>
+            <td>Team C vs Team D</td>
+            <td>Local Y</td>
+          </tr>
+          <!-- Adicione mais jogos dos playoffs aqui -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="superbowl">
+      <h2>Super Bowl LVIII</h2>
+      <table id="tabela-superbowl">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Jogo</th>
+            <th>Local</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>11/02/2024</td>
+            <td>18:30</td>
+            <td>NFC Champion vs AFC Champion</td>
+            <td>Allegiant Stadium, Las Vegas</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NFL. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
