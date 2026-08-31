@@ -1,0 +1,14 @@
+# Banco de dados H2
+data/agendaqui.mv.db
+data/agendaqui.trace.db
+*.mv.db
+*.trace.db
+
+# Arquivos do Expo
+.expo/
+expo-env.d.ts
+
+# Dependências
+node_modules/
+package-lock.json
+#
